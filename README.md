@@ -1,5 +1,5 @@
 # Shoplication
-Başlangıçta Html CSS Bootstrap ve C# kullanrak tasarlayıp ardından React kullanarak geliştirmek istediğim ve yarım kalan e-ticaret projesi.
+Başlangıçta Html CSS Bootstrap ve C# kullanrak tasarlayıp ardından React kullanarak geliştirmek istediğim ve yarım kalan e-ticaret projesi. Web alanında kişisel gelişimimin en büyük parçası.
 
 KULLANIMI:
 Projeyi bilgisayarınıza indirdikten sonra rardan çıkarın.

@@ -1,0 +1,17 @@
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.csprojAssemblyReference.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.AssemblyInfoInputs.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.AssemblyInfo.cs
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.csproj.CoreCompileInputs.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Business.deps.json
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Business.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ref\ShopApp.Business.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Business.pdb
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Data.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Entity.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Entity.pdb
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\bin\Debug\net5.0\ShopApp.Data.pdb
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.csproj.CopyComplete
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ref\ShopApp.Business.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Business\obj\Debug\net5.0\ShopApp.Business.pdb

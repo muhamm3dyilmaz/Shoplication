@@ -1,0 +1,23 @@
+@model Product
+
+<div class="card mb-4">
+
+    <img class="card-img-top urunResim" src="~/img/@Model.ImageUrl" alt=""  >
+
+    <div class="card-body">
+
+        <h5 class="card-title " style="font-size: 15px;">@Model.Name <span>@Model.Description</span></h5>
+        
+        <small class="text-muted">
+            <i class="fas fa-lira-sign"></i>@Model.Price
+        </small>
+ 
+    </div>
+
+    <card class="card-footer text-center py-2">
+        <a asp-controller="shop" asp-action="Details" asp-route-url="@Model.Url" class="btn btn-sm btn-green">Details</a>
+        <a asp-controller="shop" asp-action="addtocart" asp-route-id="@Model.ProductId" class="btn btn-sm btn-green">Add to Cart</a>
+    </card>
+
+</div>
+

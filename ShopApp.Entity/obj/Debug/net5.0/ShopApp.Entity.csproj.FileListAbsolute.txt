@@ -1,0 +1,12 @@
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\bin\Debug\net5.0\ShopApp.Entity.deps.json
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\bin\Debug\net5.0\ShopApp.Entity.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\bin\Debug\net5.0\ref\ShopApp.Entity.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\bin\Debug\net5.0\ShopApp.Entity.pdb
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.csprojAssemblyReference.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.GeneratedMSBuildEditorConfig.editorconfig
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.AssemblyInfoInputs.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.AssemblyInfo.cs
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.csproj.CoreCompileInputs.cache
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ref\ShopApp.Entity.dll
+D:\Web Developing\Asp.Net MVC\ShopApp\ShopApp.Entity\obj\Debug\net5.0\ShopApp.Entity.pdb

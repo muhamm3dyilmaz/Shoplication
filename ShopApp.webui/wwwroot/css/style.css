@@ -1,0 +1,83 @@
+/* body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+@media screen and (min-width: 768px){
+    .urunResim{
+        height:350px;
+    }
+}
+
+@media screen and (max-width){
+    .urunResim{
+        max-height:350px;
+    }
+}
+
+.btn-green{
+    color:white !important;
+    background:#83c983 !important;
+}
+
+.btn-green:hover{
+    background-color:#1daf1d !important;
+}
+
+.active-btn.active .btn-green{
+    background-color:#1daf1d !important;
+    border-color: #1daf1d !important;
+}
+
+.btn-red{
+    color:white !important;
+    background-color:#d76363 !important;
+}
+
+.btn-red:hover{
+    background-color:#e00909 !important;
+}
+
+.nav-txt{
+    color: white !important;
+}
+
+.nav-txt:hover{
+    color: #3399FF !important;
+    border-bottom: 3px solid #3399FF !important;
+    border-left: 3px solid #3399FF !important;
+    border-radius: 5px !important;
+}
+
+#category-box.active{    
+    color: white  !important;
+    border: black !important;
+    background-color: black !important;
+}
+
+.true-icon{
+    color: rgb(6, 194, 6);
+}
+
+.false-icon{
+    color: rgb(223, 22, 22);
+}
+
+#page-footer{
+    background-color:black !important;
+    color: #3399FF;
+}
+
+/* @keyframes gizle {
+    from { 
+        visibility: visible;
+    }
+    to{ 
+        visibility: hidden;
+    }
+}
+
+#uyari{
+    animation: gizle 1s ease-out forwards;
+} */

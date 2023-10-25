@@ -1,0 +1,104 @@
+@model ProductListViewModel
+
+<div class="row">
+
+    <div class="col-md-12">
+        
+        <h1>Admin Products</h1>
+        <hr>
+
+        <a class="btn btn-green mb-3" href="/admin/createproduct">Create Product</a>
+
+        <table class="table table-bordered">
+
+            <thead>
+
+                <tr>
+
+                    <td style="width:75px">Id</td>
+                    <td style="width:75px">Image</td>
+                    <td>Name</td>
+                    <td>Description</td>
+                    <td style="width:110px">Price</td>
+                    <td style="width:110px">Home Page</td>
+                    <td style="width:110px">Approved</td>
+                    <td style="width:140px"></td>
+
+                </tr>
+
+            </thead>
+
+            <tbody>
+
+                @if (Model.Products.Count > 0)
+                {
+                    @foreach (var item in Model.Products)
+                    {
+                        <tr>
+
+                            <td>@item.ProductId</td>
+                            <td><img src="~/img/@item.ImageUrl" width="80px"></td>
+                            <td>@item.Name</td>
+                            <td>@item.Description</td>
+                            <td>@item.Price</td>
+                            <td>
+
+                                @if(item.IsHome)
+                                {
+                                    <i class="fas fa-check-circle true-icon"></i>
+                                }
+
+                                else
+                                {
+                                    <i class="fas fa-times-circle false-icon"></i>
+                                }
+
+                            </td>
+
+                            <td>
+
+                                @if(item.IsApproved)
+                                {
+                                    <i class="fas fa-check-circle true-icon"></i>
+                                }
+
+                                else
+                                {
+                                    <i class="fas fa-times-circle false-icon"></i>
+
+                                }
+                            </td>
+
+                            <td>
+                                <a href="/admin/adminproducts/@item.ProductId" class="btn btn-green btn-sm mr-2">Edit</a>
+                                
+                                <form action="/admin/deleteproduct" method="post" class="d-inline">
+                                
+                                    <input type="hidden" name="productId" value="@item.ProductId">
+
+                                    <button type="submit" class="btn btn-red btn-sm">Delete</button>
+                                
+                                </form>
+
+                            </td>
+
+                        </tr>
+                    
+                    }
+
+                }
+
+                else
+                {
+                    <div class="alert alert-warning">
+                        <h3>No Products!</h3>
+                    </div>
+                }
+
+            </tbody>
+
+        </table>
+
+    </div>  
+        
+</div>        

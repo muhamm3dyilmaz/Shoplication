@@ -1,0 +1,31 @@
+@model ProductDetailModel
+
+
+<div class="row">
+
+    <div class="col-md-4">
+        <img src="~/img/@Model.Product.ImageUrl" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-md-8">
+
+            @foreach(var item in Model.Categories)
+            {
+                <a asp-controller="shop" asp-action="List" asp-route-category="@item.Url" class="btn btn-link">@item.Name</a>
+            }
+
+        <div>
+
+            <h1 class="mt-5">@Model.Product.Name</h1>
+            <hr>
+            <h4>@Model.Product.Price <i class="fas fa-lira-sign" style="font-size:20px"></i></h4>
+            <hr>
+            <h4 >@Model.Product.Description</h4>
+            <hr>
+            <button type="submit" class="btn btn-lg btn-green">Add to Cart</button>
+
+        </div>
+        
+    </div>
+
+</div>

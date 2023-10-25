@@ -1,0 +1,33 @@
+@model Product
+
+@section Categories
+{
+    @await Component.InvokeAsync("Categories")
+}
+
+<div class="card mb-3 ">
+
+    <div class="row g-3">
+
+        <div class="col-md-3">
+            <img src="~/img/@Model.ImageUrl" alt="" class="card-img">
+        </div>
+
+        <div class="col-md-9">
+
+            <div class="card-body">
+
+                <h5 class="card-title">@Model.Name</h5>
+                <p class="card-text">@Model.Description</p>
+                <p class="card-text">@Model.Price</p>
+                
+
+            </div>
+            
+        </div>
+
+    </div>
+
+
+
+</div>

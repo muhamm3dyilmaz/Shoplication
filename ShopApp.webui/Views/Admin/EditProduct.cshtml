@@ -1,0 +1,139 @@
+@model ProductModel
+
+<h1>Edit Product</h1>
+<hr>
+
+<form asp-controller="Admin" asp-action="EditProduct" method="post" enctype="multipart/form-data">
+
+    <div asp-validation-summary="All" class="text-danger"></div>
+
+    <div class="row">
+
+        <div class="col-md-8">
+
+            <input type="hidden" name="ProductId" value="@Model.ProductId">
+
+            <div class="form-group row">
+
+                <label asp-for="Name" class="col-sm-2 col-form-label"></label>
+
+                <div class="col-sm-10">
+
+                    <input class="form-control" asp-for="Name">
+                    <span class="text-danger" asp-validation-for="Name"></span>
+
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+
+                <label asp-for="Url" class="col-sm-2 col-form-label"></label>
+
+                <div class="col-sm-10">
+
+                    <input class="form-control" asp-for="Url">
+                    <span class="text-danger" asp-validation-for="Url"></span>
+
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+
+                <label asp-for="Description" class="col-sm-2 col-form-label"></label>
+
+                <div class="col-sm-10">
+
+                    <textarea class="form-control" asp-for="Description"></textarea>
+                    <span class="text-danger" asp-validation-for="Description"></span>
+
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+
+                <label asp-for="Price" class="col-sm-2 col-form-label"></label>
+
+                <div class="col-sm-10">
+
+                    <input  class="form-control" asp-for="Price">
+                    <span class="text-danger" asp-validation-for="Price"></span>
+
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+
+                <label asp-for="ImageUrl" class="col-sm-2 col-form-label"></label>
+
+                <div class="col-sm-10">
+
+                    <input type="hidden" asp-for="ImageUrl">
+                    <img src="~/img/@Model.ImageUrl" width="80px">
+                    <input type="file" name="file">
+
+                </div>
+                
+            </div>
+
+            <div class="form-group row">
+
+                <div class="col-sm-10 offset-sm-2">
+
+                    <button type="submit" class="btn btn-green" value="Save Product">Save Product</button>
+
+                </div>
+                
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            @for (int i = 0; i < Model.SelectedCategories.Count; i++)
+            {
+                <input type="hidden" name="SelectedCategories[@i].CategoryId" value="@Model.SelectedCategories[@i].CategoryId">
+                <input type="hidden" name="SelectedCategories[@i].Name" value="@Model.SelectedCategories[@i].Name">
+            }
+
+            @foreach (var item in (List<Category>)ViewBag.Categories)
+            {
+                <div class="custom-control custom-checkbox">
+                    
+                    <input type="checkbox" class="custom-control-input" id="@(item.CategoryId)" name="categoryIds" value="@item.CategoryId"
+                    @(Model.SelectedCategories.Any(i => i.CategoryId == item.CategoryId)? "checked" :"")>
+
+                    <label class="custom-control-label" for="@(item.CategoryId)">@item.Name</label>
+                </div>
+            }
+
+            <hr>
+
+                <div class="custom-control custom-checkbox">
+                    
+                    <input asp-for="IsApproved" type="checkbox" class="custom-control-input">
+                    <label asp-for="IsApproved" class="custom-control-label"></label>
+
+                </div>
+
+                <div class="custom-control custom-checkbox">
+                    
+                    <input asp-for="IsHome" type="checkbox" class="custom-control-input">
+                    <label asp-for="IsHome" class="custom-control-label"></label>
+                    
+                </div>
+
+        </div>
+
+    </div>
+
+</form>
+
+@section Scripts
+{
+    <script src="/modules/jquery-validation/dist/jquery.validate.min.js"></script>
+    <script src="/modules/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.min.js"></script>
+}

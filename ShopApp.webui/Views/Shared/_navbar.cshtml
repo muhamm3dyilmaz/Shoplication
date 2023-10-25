@@ -1,0 +1,70 @@
+<div style="background-color: black; height:60px;" class="navbar navbar-dark navbar-expand-sm d-flex justify-content-between">
+
+    <a href="/" class="navbar-brand"><i class="fab fa-shopify"></i>  Shoplication</a>
+
+    <ul class="navbar-nav mr-auto">
+
+        <li class="nav-item px-3">
+            <a  asp-controller="shop" asp-action="List"  class="nav-link d-inline nav-txt">Products</a>
+        </li>
+
+        @if (User.Identity.IsAuthenticated)
+        {
+            <li class="nav-item px-3">
+                <a href="#" class="nav-link d-inline nav-txt">Cart</a>
+            </li>
+
+            <li class="nav-item px-3">
+                <a href="#" class="nav-link d-inline nav-txt">Orders</a>
+            </li>
+
+            <li class="nav-item px-3">
+                <a asp-controller="admin" asp-action="adminproducts" class="nav-link d-inline nav-txt">Admin Products</a>
+            </li>
+
+            <li class="nav-item px-3">
+                <a asp-controller="admin" asp-action="admincategories" class="nav-link d-inline nav-txt">Admin Categories</a>
+            </li>
+        }
+
+    </ul>
+
+        
+
+    <ul class="navbar-nav ml-auto">
+
+        @if (User.Identity.IsAuthenticated)
+        {
+             <li class="nav-item px-3">
+                <a  asp-controller="Account" asp-action="Manage" class="nav-link d-inline nav-txt">
+                    @User.Identity.Name
+                </a>
+            </li>
+
+            <li class="nav-item px-3">
+                <a  asp-controller="Account" asp-action="Logout"  class="nav-link d-inline nav-txt">
+                    <i class="fas fa-sign-out-alt"></i> Logout
+                </a>
+            </li>
+        }
+
+        else
+        {
+            <li class="nav-item px-3">
+                <a asp-controller="Account" asp-action="Login" class="nav-link d-inline nav-txt">
+                    <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+            </li>
+
+            <li class="nav-item px-3">
+                <a asp-controller="Account" asp-action="Register" class="nav-link d-inline nav-txt">
+                    <i class="fas fa-user-plus"></i> Register
+                </a>
+            </li>
+        }
+      
+
+    </ul>
+
+
+</div>
